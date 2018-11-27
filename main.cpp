@@ -4,6 +4,11 @@
 using namespace std;
 
 //prototypes:
+bool isPositive(int);
+void fillWith(vector <int> &, int);
+void printVector(vector <int> &);
+
+
 
 
 /////DO NOT TOUCH/////
@@ -42,3 +47,47 @@ int main()
 }
 
 //function definitions
+
+bool isPositive(int number)
+{
+
+  if(number>0)
+  {
+     return true;
+  }
+  else
+  {
+     return false;
+  }
+
+}
+
+
+void fillWith(vector<int> &project, int value)
+{
+
+   for(int i=0; i<project.size(); i++)
+   {
+   project[i]=value;
+   }
+
+}
+
+
+void printVector(vector<int> &grid)
+{
+for(int i=0; i<grid.size(); i++)
+  {
+  cout<<grid[i]<<" ";
+  }
+
+}
+
+
+
+
+
+
+
+
+
